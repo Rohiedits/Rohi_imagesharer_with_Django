@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Detail View {% endblock %}
+
+{% block body %}
+<div class="row">
+  <div class=" pt-5 fw-semibold   ">
+
+  <!-- {{ object.title}} -->
+  {{ object.text}}
+  </div>
+  <div class="col-sm-10 offset-sm-1 py-5">
+  
+  <img src="{{object.image.url}}" class="img-fluid rounded" >
+  </div>
+</div>
+{% endblock %}
+ <!-- <a href="{% url 'Vno_18:index' %}">&larr;Go back</a> -->
